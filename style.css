@@ -1,0 +1,108 @@
+/* ===== style.css =====
+   This one file controls how EVERY page looks.
+   Change a color here and it changes on all pages at once. */
+
+/* Colors live here so they are easy to change. */
+:root {
+  --page: #e8e5ef;      /* page background */
+  --ink: #2b2540;       /* main text color */
+  --tile-1: #6b3f69;    /* plum */
+  --tile-2: #2f6f73;    /* teal */
+  --tile-3: #b97d1f;    /* mustard */
+  --tile-4: #9c4538;    /* brick */
+  --bar: #2b2540;       /* navigation bar background */
+  --bar-text: #f3f0fa;  /* navigation bar text */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Keeps everything in a centered column */
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+/* ---- The big clickable tiles at the top of each page ---- */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 190px;
+  padding: 18px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  background: var(--tile-1);
+}
+.tile:nth-child(2) { background: var(--tile-2); }
+.tile:nth-child(3) { background: var(--tile-3); }
+.tile:nth-child(4) { background: var(--tile-4); }
+
+.tile strong { font-size: 1.5rem; line-height: 1.2; }
+.tile span { font-size: 0.95rem; opacity: 0.9; }
+
+.tile:hover { filter: brightness(1.12); }
+
+/* If you put a picture inside a tile, it fills the whole tile */
+.tile.has-image { padding: 0; }
+.tile.has-image img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block; }
+
+/* ---- The navigation bar with icons ---- */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 32px 0 0;
+  padding: 0;
+  list-style: none;
+  background: var(--bar);
+  border-radius: 6px;
+}
+
+.nav li + li { border-left: 1px solid rgba(243, 240, 250, 0.25); } /* thin divider lines */
+
+.nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  padding: 12px 14px;
+  color: var(--bar-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.nav .icon { font-size: 1.5rem; line-height: 1.2; }
+.nav a:hover { background: rgba(255, 255, 255, 0.12); }
+.nav a[aria-current="page"] { background: rgba(255, 255, 255, 0.2); font-weight: 700; }
+
+/* ---- Text pages (like About) ---- */
+.text { max-width: 62ch; margin: 0 auto 8px; }
+.text h1 { font-size: 2rem; line-height: 1.2; }
+
+/* Visible outline when using the keyboard */
+a:focus-visible { outline: 3px solid #f0b429; outline-offset: 2px; }
+
+/* ---- On phones, tiles stack in one column ---- */
+@media (max-width: 560px) {
+  .tiles { grid-template-columns: 1fr; }
+  .nav a { min-width: 76px; padding: 10px 8px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tile { transition: filter 0.15s; }
+}
