@@ -1,18 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <title>Portfolio - Abigail Miller</title>
+        <style>
+            .normalText {
+            	position:relative;
+            	font-family:'Georgia',sans-serif;
+            	font-size:12px;
+            	left:80px;
+            	width:1200px;
+            }
+        </style>
     </head>
 
     <nav>
         <ul>
             <li><strong>Home</strong></li>
+            <li><a href="engineering.html">Engineering</a></li>
             <li><a href="art_gallery.html">Art Gallery</a></li>
+            <li><a href="culinary.html">Culinary</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
         </ul>
     </nav>
 
     <body>
-        <h1>Hello, world!</h1>
-        <p>This is my portfolio.</p>
+        <h1>About me!</h1>
+        <div class="wrap">
+            <div class="tiles">
+            <a class="Engineering" href="engineering.html"><strong>Engineering</strong></a>
+            <a class="Art Gallery" href="art_gallery.html"><strong>Art Gallery</strong></a>
+            <a class="Culinary" href="culinary.html"><strong>Culinary</strong></a>
+            <a class="Inspiration" href="inspiration.html"><strong>Inspiration</strong></a>
+    </div>
+
     </body>
 </html>
