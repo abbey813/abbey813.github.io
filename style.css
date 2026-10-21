@@ -8,12 +8,6 @@
   --ink: #2b2540;       /* main text color */
   --bar: #2b2540;       /* navigation bar background */
   --bar-text: #f3f0fa;  /* navigation bar text */
-
-  /* Colors of the four tiles on the home page */
-  --tile-1: #4a3f7a;
-  --tile-2: #6a4c93;
-  --tile-3: #8a4f7d;
-  --tile-4: #355c7d;
 }
 
 * { box-sizing: border-box; }
@@ -62,49 +56,36 @@ body {
 }
 /* When the tile has the "open" label, show the hidden part */
 .tile.open .tile-content {
-    display: flex;
+    display: block;
     position: static; /*make relative, or delete if good bc is default */
-    top: 0; left: 0; right: 0; bottom: 0;
     overflow-y: auto;
     /*background: var(--page);*/
     padding: 24px 16px 48px;
     /*z-index: 100;*/
 }
 .tile-content img {
-    display: block; width: 100%; max-width: 800px;
+    display: block; width: 100%; max-width: 400px;
     margin: 10px auto 0; border-radius: 6px;
 }
 .tile-content p {
     max-width: 800px; margin: 10px auto;
 }
 .close-btn {
-    display: block; margin-left: auto; padding: 8px 14px;
+    display: block; margin-left: auto; padding: 6px 10px;
     font: inherit; cursor: pointer;
 }
 
 /* ---- The navigation bar with icons ---- */
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 32px 0 0;
-  padding: 0;
-  list-style: none;
-  background: var(--bar);
-  border-radius: 6px;
+  display: flex; flex-wrap: wrap; justify-content: center; margin: 32px 0 0;
+  padding: 0; list-style: none; background: var(--bar); border-radius: 6px;
 }
 
 .nav li + li { border-left: 1px solid rgba(243, 240, 250, 0.25); } /* thin divider lines */
 
 .nav a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 100px;
-  padding: 12px 14px;
-  color: var(--bar-text);
-  text-decoration: none;
-  font-size: 0.9rem;
+  display: flex; flex-direction: column; align-items: center; min-width: 100px;
+  padding: 12px 14px; color: var(--bar-text); text-decoration: none; font-size: 0.9rem;
 }
 .nav .icon { font-size: 1.5rem; line-height: 1.2; }
 .nav a:hover { background: rgba(255, 255, 255, 0.12); }
