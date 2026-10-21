@@ -18,6 +18,7 @@
       <div class="tile-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div>
     </div>
     <div class="tile-content">
+      <button class="close-btn">Close ✕</button>
       <p>Introduction to Buggy</p>
       <img src="/photos/bug1.JPEG" alt="Buggy Races">
       <p>Being inside a buggy</p>
@@ -37,6 +38,7 @@
       <div class="tile-title">NASA Lunabotics<br><span>Lunar Excavation Rover</span></div>
     </div>
     <div class="tile-content">
+      <button class="close-btn">Close ✕</button>
       <p>Write your description here.</p>
       <img src="/photos/lunTeam1.jpg" alt="Lunabotics rover, photo 1">
       <img src="photos/lunabotics2.jpg" alt="Lunabotics rover, photo 2">
@@ -49,6 +51,7 @@
       <div class="tile-title">Machining<br><span>in the Workshop</span></div>
     </div>
     <div class="tile-content">
+      <button class="close-btn">Close ✕</button>
       <p>Write your description here.</p>
       <img src="photos/lunabotics1.jpg" alt="Machining, photo 1">
       <img src="photos/lunabotics2.jpg" alt="Machining, photo 2">
@@ -61,6 +64,7 @@
       <div class="tile-title">Academics<br><span>Resume &amp; Relevant Coursework</span></div>
     </div>
     <div class="tile-content">
+      <button class="close-btn">Close ✕</button>
       <p>Write your description here.</p>
       <img src="photos/lunabotics1.jpg" alt="Academics, photo 1">
       <img src="photos/lunabotics2.jpg" alt="Academics, photo 2">
@@ -80,14 +84,20 @@
   </div>
 
   <script>
-    // Find every tile header, and make each one open/close its tile when clicked
-    var headers = document.querySelectorAll('.tile-header');
-
-    headers.forEach(function (header) {
-      header.addEventListener('click', function () {
-        header.parentElement.classList.toggle('open');
-      });
+  // Clicking a tile's top part opens its full-screen panel
+  var headers = document.querySelectorAll('.tile-header');
+  headers.forEach(function (header) {
+    header.addEventListener('click', function () {
+      header.parentElement.classList.add('open');
     });
-  </script>
+  });
+  // Clicking a Close button closes the panel it is inside
+  var closeButtons = document.querySelectorAll('.close-btn');
+  closeButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      button.closest('.tile').classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>
