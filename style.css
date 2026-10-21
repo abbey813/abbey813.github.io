@@ -16,10 +16,10 @@
   --tile-4: #355c7d;
 }
 
-/** { box-sizing: border-box; }*/
+* { box-sizing: border-box; }
 
 body {
-  margin: 0;
+  margin: 10px;
   background: var(--page);
   color: var(--ink);
   font-family: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
