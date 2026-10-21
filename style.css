@@ -10,7 +10,7 @@
   --bar-text: #f3f0fa;  /* navigation bar text */
 }
 
-* { box-sizing: border-box; }
+/** { box-sizing: border-box; }*/
 
 body {
   margin: 0;
