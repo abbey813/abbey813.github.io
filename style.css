@@ -8,6 +8,12 @@
   --ink: #2b2540;       /* main text color */
   --bar: #2b2540;       /* navigation bar background */
   --bar-text: #f3f0fa;  /* navigation bar text */
+
+  /* Colors of the four tiles on the home page */
+  --tile-1: #4a3f7a;
+  --tile-2: #6a4c93;
+  --tile-3: #8a4f7d;
+  --tile-4: #355c7d;
 }
 
 /** { box-sizing: border-box; }*/
@@ -45,11 +51,11 @@ body {
 /* The title bar: black at 50% see-through, sitting over the photo */
 .tile-title {
     position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem;
-    padding: 12px 16px; background: rgba(0, 0, 0, 0.5); color: black;
+    padding: 12px 16px; background: rgba(0, 0, 0, 0.5); color: white;
 }
-.tile-subtitle {
-    position: absolute; left: 0; right: 0; bottom: 0; font-size: 0.8rem;
-    padding: 12px 16px; background: rgba(0, 0, 0, 0.5); color: black;
+/* The smaller line under the title (the <span> inside .tile-title) */
+.tile-title span {
+    font-size: 0.8rem; opacity: 0.9;
 }
 /* The hidden part: description and extra photos */
 .tile-content {
@@ -76,9 +82,10 @@ body {
   text-decoration: none;
   background: var(--tile-1);
 }
-.coverTile:nth-child(2)
-.coverTile:nth-child(3)
-.coverTile:nth-child(4)
+/* Each home tile gets its own color */
+.coverTile:nth-child(2) { background: var(--tile-2); }
+.coverTile:nth-child(3) { background: var(--tile-3); }
+.coverTile:nth-child(4) { background: var(--tile-4); }
 .coverTile strong { font-size: 1.5rem; line-height: 1.2; }
 .coverTile span { font-size: 0.95rem; opacity: 0.9; }
 .coverTile:hover { filter: brightness(1.12); }
