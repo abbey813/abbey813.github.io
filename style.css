@@ -60,8 +60,8 @@ body {
 }
 /* When the tile has the "open" label, show the hidden part */
 .tile.open .tile-content {
-    display: flex;
-    /*position: static; /*make relative, or delete if good bc is default */
+    display: block;
+    position: static;
     overflow-y: auto;
     background: var(--page);
     padding: 24px 16px 48px;
