@@ -43,7 +43,7 @@ body {
 
 /* The clickable top part with the background photo */
 .tile-header {
-    position: relative; height: 220px; background-size: cover;
+    position: relative; height: 160px; background-size: cover;
     background-position: center; cursor: pointer;
 }
 /* The title bar: black at 50% see-through, sitting over the photo */
