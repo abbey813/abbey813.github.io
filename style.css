@@ -62,13 +62,13 @@ body {
 }
 /* When the tile has the "open" label, show the hidden part */
 .tile.open .tile-content {
-    display: block;
-    position: fixed;
+    display: flex;
+    position: static; /*make relative, or delete if good bc is default */
     top: 0; left: 0; right: 0; bottom: 0;
     overflow-y: auto;
-    background: var(--page);
+    /*background: var(--page);*/
     padding: 24px 16px 48px;
-    z-index: 100;
+    /*z-index: 100;*/
 }
 .tile-content img {
     display: block; width: 100%; max-width: 800px;
