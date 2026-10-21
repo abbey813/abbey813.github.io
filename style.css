@@ -49,7 +49,7 @@ body {
 /* The title bar: black at 50% see-through, sitting over the photo */
 .tile-title {
     position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem;
-    padding: 4px 12px; background: rgba(0, 0, 0, 0.4); color: white; line-height: 1.2;
+    padding: 4px 12px; background: rgba(0, 0, 0, 0.95); color: white; line-height: 1.2;
 }
 /* The smaller line under the title (the <span> inside .tile-title) */
 .tile-title span {
