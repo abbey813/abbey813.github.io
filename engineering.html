@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio | Engineering</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+  /* The grid that holds all the tiles */
+  .tiles {
+    display: grid; gap: 16px; padding: 16px; align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  /* One tile */
+  .tile {
+    border-radius: 10px; overflow: hidden; background: #f2f2f2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  /* The clickable top part with the background photo */
+  .tile-header {
+    position: relative; height: 220px; background-size: cover;
+    background-position: center; cursor: pointer;
+  }
+  /* The title bar: black at 50% see-through, sitting over the photo */
+  .tile-title {
+    position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem;
+    padding: 12px 16px; background: rgba(0, 0, 0, 0.5); color: black;
+  }
+  /* The hidden part: description and extra photos */
+  .tile-content {
+    display: none;
+    padding: 16px;
+  }
+  /* When the tile has the "open" label, show the hidden part */
+  .tile.open .tile-content {
+    display: block;
+  }
+  .tile-content img {
+    display: block; width: 100%; margin-top: 10px;border-radius: 6px;
+  }
+</style>
 </head>
+  
 <body>
   <div class="wrap">
     <div class="tiles">
-      <a class="tile" href="engineering/buggy.html"><strong>Fringe Racing: Buggy</strong><span>Carbon-fiber Vehicle Racing</span></a>
-      <a class="tile" href="engineering/lunabotics.html"><strong>NASA Lunabotics</strong><span>Lunar Escavation Rover</span></a>
+  <!-- TILE 1 -->
+  <div class="tile">
+    <div class="tile-header" style="background-image: url('photos/buggyCoverTile.jpg');">
+      <div class="tile-title">Fringe Racing: Buggy<span>Carbon-fiber Vehicle Racing</span></div>
+    </div>
+    <div class="tile-content">
+      <p>Introduction to Buggy</p>
+      <img src="photos/bug1.jpeg" alt="Buggy Races">
+      <p>Being inside a buggy</p>
+      <img src="photos/bug2.jpg" alt="Me, inside my buggy">
+      <p>Working in the shop</p>
+      <img src="photos/bugShop1.jpg" alt="A carbon-fiber layup for the pan">
+      <p>Due to competitive nature of buggy, the detailed build process of Fringe's 
+        buggies is kept a secret. However, here are some slides below that are a part 
+        of our build book, the complete guide to building a buggy that aids in the 
+        flow of information down through the years.</p>
+    </div>
+  </div>
+  <!-- END OF TILE 1 -->
+
+  <!--  TILE 2  -->
+  <div class="tile">
+    <div class="tile-header" style="background-image: url('photos/lunaboticsCoverTile.jpg');">
+      <div class="tile-title">NASA Lunabotics<span>Lunar Excavation Rover</span></div>
+    </div>
+    <div class="tile-content">
+      <p>Write your description here.</p>
+      <img src="photos/lunabotics1.jpg" alt="Page 1 of Comic One">
+      <img src="photos/lunabotics2.jpg" alt="Page 2 of Comic One">
+    </div>
+  </div>
+  <!-- END OF TILE 2 -->
+
+      <!--<a class="tile" href="engineering/buggy.html"><strong>Fringe Racing: Buggy</strong><span>Carbon-fiber Vehicle Racing</span></a>
+      <a class="tile" href="engineering/lunabotics.html"><strong>NASA Lunabotics</strong><span>Lunar Escavation Rover</span></a>-->
       <a class="tile" href="machining"><strong>Machine Shop</strong><span>Metal machining & CNC</span></a>
       <a class="tile" href="academics"><strong>Academics</strong><span>Resume & Relevant Coursework</span></a>
     </div>
