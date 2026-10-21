@@ -22,6 +22,10 @@ body {
 .wrap {
    padding: 24px 16px 48px;
 }
+.img.c {
+   display: flex;
+   position: relative;
+}
 /* The grid that holds all the tiles */
 .tiles {
    display: grid; gap: 24px; padding: 16px; align-items: start;
