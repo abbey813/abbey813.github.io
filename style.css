@@ -32,7 +32,7 @@ body {
 /* The grid that holds all the tiles */
 .tiles {
    display: grid; gap: 16px; padding: 16px; align-items: start;
-   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
  /* One tile, on a page. Ex: buggy tile on Engineering page. clickable to expand*/
