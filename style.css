@@ -43,12 +43,12 @@ body {
 
 /* The clickable top part with the background photo */
 .tile-header {
-    position: relative; height: 250px; background-size: cover;
+    position: relative; height: 300px; background-size: cover;
     background-position: center; cursor: pointer;
 }
 /* The title bar: black at 50% see-through, sitting over the photo */
 .tile-title {
-    position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem;
+    position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem; height: 80px;
     padding: 4px 12px; background: rgba(0, 0, 0, 0.95); color: white; line-height: 1.2;
 }
 /* The smaller line under the title (the <span> inside .tile-title) */
@@ -72,7 +72,7 @@ body {
 .coverTile {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   min-height: 190px;
   padding: 18px;
   border-radius: 5px;
