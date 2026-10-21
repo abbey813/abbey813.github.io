@@ -47,6 +47,10 @@ body {
     position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem;
     padding: 12px 16px; background: rgba(0, 0, 0, 0.5); color: black;
 }
+.tile-subtitle {
+    position: absolute; left: 0; right: 0; bottom: 0; font-size: 0.8rem;
+    padding: 12px 16px; background: rgba(0, 0, 0, 0.5); color: black;
+}
 /* The hidden part: description and extra photos */
 .tile-content {
     display: none;
