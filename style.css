@@ -68,24 +68,6 @@ body {
     display: block; width: 100%; margin-top: 10px;border-radius: 6px;
 }
 
-/* On the home page. Ex: 'Engineering' tile on home page. clickable to other pages*/
-.coverTile {
-  display: flex; flex-direction: column; justify-content: center;
-  min-height: 190px; padding: 18px; border-radius: 5px;
-  color: #fff; text-decoration: none; background: var(--tile-1);
-}
-/* Each home tile gets its own color */
-.coverTile:nth-child(2) { background: var(--tile-2); }
-.coverTile:nth-child(3) { background: var(--tile-3); }
-.coverTile:nth-child(4) { background: var(--tile-4); }
-.coverTile strong { font-size: 1.5rem; line-height: 1.2; }
-.coverTile span { font-size: 0.95rem; opacity: 0.9; }
-.coverTile:hover { filter: brightness(1.12); }
-
-/* If you put a picture inside a tile, it fills the whole tile */
-.coverTile.has-image { padding: 0; }
-.coverTile.has-image img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block; }
-
 /* ---- The navigation bar with icons ---- */
 .nav {
   display: flex;
