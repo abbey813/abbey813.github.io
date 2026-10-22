@@ -21,86 +21,53 @@
       </ul>
     </nav>
     
-  <div class="tiles">
-  <!-- TILE 1 -->
-  <div class="tile">
-    <div class="tile-header" style="background-image: url('/photos/bugCoverTile.jpg');">
-      <div class="tile-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div>
-    </div>
-    <div class="tile-content">
-      <button class="close-btn">Close ✕</button>
-      <p>Introduction to Buggy</p>
-      <img src="/photos/bug1.JPEG" alt="Buggy Races">
-      <p>Being inside a buggy</p>
-      <img src="/photos/bug2.JPG" alt="Me, inside my buggy">
-      <p>Working in the shop</p>
-      <img src="/photos/bugShop1.JPG" alt="A carbon-fiber layup for the pan">
-      <p>Due to competitive nature of buggy, the detailed build process of Fringe's 
-        buggies is kept a secret. However, here are some slides below that are a part 
-        of our build book, the complete guide to building a buggy that aids in the 
-        flow of information down through the years.</p>
-      <img.c src="/photos/buildBook1" alt="a sample from the build book">
-      <img.c src="/photos/buildBook2" alt="a sample from the build book">
-      <img.c src="/photos/buildBook3" alt="a sample from the build book">
-      <img.c src="/photos/buildBook4" alt="a sample from the build book">
-      <img.c src="/photos/buildBook5" alt="a sample from the build book">
-    </div>
-  </div>
+    <div class="grid">
+      
+      <div class="dropDownTile" style="background-image: url('/photos/bugCoverTile.jpg');">
+        <div class="dropDown-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div>
+      </div>
+      <div class="dropped" style="display:none">
+          this is the tile
+      </div>
 
-  <!--  TILE 2  -->
-  <div class="tile">
-    <div class="tile-header" style="background-image: url('/photos/lunCoverTile.JPG');">
-      <div class="tile-title">NASA Lunabotics<br><span>Lunar Excavation Rover</span></div>
-    </div>
-    <div class="tile-content">
-      <button class="close-btn">Close ✕</button>
-      <p>Write your description here.</p>
-      <img src="/photos/lunTeam1.jpg" alt="Lunabotics rover, photo 1">
-      <img src="photos/lunabotics2.jpg" alt="Lunabotics rover, photo 2">
-    </div>
-  </div>
+      <div class="dropDownTile" style="background-image: url('/photos/bugCoverTile.jpg');">
+        <div class="dropDown-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div>
+      </div>
+      <div class="dropped" style="display:none">
+          this is the tile
+      </div>
 
-      <!--  TILE 3  -->
-  <div class="tile">
-    <div class="tile-header" style="background-image: url('photos/lunaboticsCoverTile.jpg');">
-      <div class="tile-title">Machining<br><span>in the Workshop</span></div>
-    </div>
-    <div class="tile-content">
-      <button class="close-btn">Close ✕</button>
-      <p>Write your description here.</p>
-      <img src="photos/lunabotics1.jpg" alt="Machining, photo 1">
-      <img src="photos/lunabotics2.jpg" alt="Machining, photo 2">
-    </div>
-  </div>
+      <div class="dropDownTile" style="background-image: url('/photos/bugCoverTile.jpg');">
+        <div class="dropDown-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div>
+      </div>
+      <div class="dropped" style="display:none">
+          this is the tile
+      </div>
 
-      <!--  TILE 4  -->
-  <div class="tile">
-    <div class="tile-header" style="background-image: url('photos/lunaboticsCoverTile.jpg');">
-      <div class="tile-title">Academics<br><span>Resume &amp; Relevant Coursework</span></div>
+      <div class="dropDownTile" style="background-image: url('/photos/bugCoverTile.jpg');">
+        <div class="dropDown-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div>
+      </div>
+      <div class="dropped" style="display:none">
+          this is the tile
+      </div>
+      
     </div>
-    <div class="tile-content">
-      <button class="close-btn">Close ✕</button>
-      <p>Write your description here.</p>
-      <img src="photos/lunabotics1.jpg" alt="Academics, photo 1">
-      <img src="photos/lunabotics2.jpg" alt="Academics, photo 2">
-    </div>
-  </div>
-
-  <script>
-  // Clicking a tile's top part opens its full-screen panel
-  var headers = document.querySelectorAll('.tile-header');
-  headers.forEach(function (header) {
-    header.addEventListener('click', function () {
-      header.parentElement.classList.add('open');
-    });
-  });
-  // Clicking a Close button closes the panel it is inside
-  var closeButtons = document.querySelectorAll('.close-btn');
-  closeButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      button.closest('.tile').classList.remove('open');
-    });
-  });
-</script>
+        
+    <script>
+        function hideShow(event) {
+          if (event.target && event.target.className == 'dropDownTile'){
+            const x = event.target.nextElementSibling;
+            if (x.style.display === 'none') {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none"
+            }
+          }
+        }
+      document.addEventListener('click', hideShow, true);
+    </script>
+    
+  </div>    
 </body>
 </html>
