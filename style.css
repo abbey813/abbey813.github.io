@@ -22,9 +22,9 @@ body {
   display: flex; flex-flow: row wrap; justify-content: space-around; 
   padding: 0; margin: 10px; list-style: none;}
 .dropDownTile {
-    cursor:pointer; background: var(--bar); position: relative; height: 400px; width: 300px;
+    cursor:pointer; background: var(--bar); position: relative; height: 400px; width: 320px;
     background-position: center; cursor: pointer; border-radius: 10px; overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25); margin: 24px; background-size: cover;}
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25); margin: 18px; background-size: cover;}
 .dropDownTile:hover {
     box-shadow: 0 8px 18px rgba(0,0,0,0.5);}
 .dropDown-title {
