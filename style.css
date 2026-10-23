@@ -34,7 +34,7 @@ body {
     font-size: 0.8rem; }
 .dropped {
   display: block; width: 100%; padding: 20px; margins: 24px;
-  background: var(--bar); color: var(--bar-text); }
+  background: var(--bar); color: var(--bar-text); border-radius: 6px; }
 
 /* ---- NAVIGATION BAR ---- */
 .nav {
