@@ -31,8 +31,6 @@
         <!-- <li><a href="inspiration.html">Inspiration</a></li> -->
       </ul>
     </nav>
-  </div>
-
 
   <div class="gallery">
     <div class="galleryItem" style="background-image: url('/photos/art/jGeilsBand.jpg');" onclick="openModal('modal1')">
@@ -68,19 +66,20 @@
 
   <script>
     function openModal(modalId) {
-    let modal = document.getElementById(modalId);
-    modal.style.display = "flex";
-    modal.classList.add("show");
+      let modal = document.getElementById(modalId);
+      modal.style.display = "flex";
+      modal.classList.add("show");
     }
 
     function closeModal(modalId) {
-    let modal = document.getElementById(modalId);
-    modal.classList.remove("show");
-    setTimeout(function () {
-    modal.style.display = "none";
-    }, 300);
-  }
+      let modal = document.getElementById(modalId);
+      modal.classList.remove("show");
+      setTimeout(function () {
+      modal.style.display = "none";
+      }, 300);
+    }
   </script>
-  
+
+</div>
 </body>
 </html>
