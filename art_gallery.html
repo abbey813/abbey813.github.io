@@ -15,9 +15,9 @@
       display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 0 15px; }
     .gallery-item {
       position: relative; width: calc(25% - 20px); height: auto;
-      margin: 10px; cursor: pointer; transition: transform 0.5s ease; }
+      margin: 10px; cursor: pointer; transition: transform 0.2s ease; }
     .gallery-item:hover {
-      transform: scale(1.1); }
+      transform: scale(1.07); }
     /* The Modal (background) */
     .modal {
       display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%;
@@ -31,7 +31,6 @@
       to {transform: scale(1);} }
     .modal.show {
       display: flex; opacity: 1; }
-    /* Close button */
     .close {
       position: absolute; top: 10px; right: 15px; color: #ffffff;
       font-size: 35px; font-weight: bold; cursor: pointer; transition: transform 0.3s; }
@@ -43,6 +42,8 @@
       .gallery-item {
         width: calc(100% - 20px);
       } }
+    .caption {
+      display: block; background: white; color: black; padding: 2px; }
   </style>
 </head>
   
@@ -61,34 +62,26 @@
 
 
   <div class="gallery">
-    <img src="/photos/art/jGeilsBand.jpg" alt="Centerfold, The J. Geils Band" class="gallery-item" onclick="openModal('modal1')">
+    <img src="/photos/art/jGeilsBand.jpg" class="gallery-item" onclick="openModal('modal1')">
+      <div class="caption">Centerfold, The J. Geils Band</div>
     <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball" class="gallery-item" onclick="openModal('modal2')">
-    <img src="/photos/art/nowNotYet.heic" alt="Now Not Yet, half-alive" class="gallery-item" onclick="openModal('modal3')">
-    <img src="/photos/art/citrona.heic" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal4')">
+    <img src="/photos/art/nowNotYet.jpg" alt="Now Not Yet, half-alive" class="gallery-item" onclick="openModal('modal3')">
+    <img src="/photos/art/citrona.jpg" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal4')">
+    <img src="/photos/art/greer.jpg" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal5')">
+    <img src="/photos/art/montgomeryRicky.jpg" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal6')">
+    <img src="/photos/art/hsArtDisplay.jpg" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal7')">
+    <img src="/photos/art/greerSetup.jpg" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal8')">
+    <img src="/photos/art/intersection.jpg" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal9')">
   </div>
 
-  <div id="modal1" class="modal">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <img src="/photos/art/jGeilsBand.jpg" alt="Centerfold, The J. Geils Band" class="modal-content">
-  </div>
-  <div id="modal2" class="modal">
-    <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball" class="modal-content">
-  </div>
-  <div id="modal3" class="modal">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <img src="/photos/art/nowNotYet.jpg" alt="Now Not Yet, half-alive" class="modal-content">
-  </div>
-  <div id="modal4" class="modal">
-    <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <img src="/photos/art/citrona.jpg" alt="Citrona, flipturn" class="modal-content">
-  </div>
-  
-  <!-- <img alt="Happy People, Greer" src="/photos/art/greer.heic" style="height: 200px; aspect:3:4">
-  <img alt="Happy People, Greer - setup" src="/photos/art/greerSetup.HEIC" style="height: 200px; aspect:3:4">
-  <img alt="high school collection" src="/photos/art/hsArtDisplay.HEIC" style="height: 200px; aspect:3:4">
-  <img alt="NOLA hallway display" src="/photos/art/nolaWaveDisplay.HEIC" style="height: 200px; aspect:3:4">
-  <img alt="Montgomery Ricky, Ricky Montgomery" src="/photos/art/montgomeryRicky.HEIC" style="height: 200px; aspect:3:4"> -->
+  <div id="modal1" class="modal"> <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <img src="/photos/art/jGeilsBand.jpg" alt="Centerfold, The J. Geils Band" class="modal-content"> </div>
+  <div id="modal2" class="modal"> <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball" class="modal-content"> </div>
+  <div id="modal3" class="modal"> <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <img src="/photos/art/nowNotYet.jpg" alt="Now Not Yet, half-alive" class="modal-content"> </div>
+  <div id="modal4" class="modal"> <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <img src="/photos/art/citrona.jpg" alt="Citrona, flipturn" class="modal-content"> </div>
 
   <script>
     function openModal(modalId) {
