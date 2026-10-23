@@ -19,6 +19,9 @@
     .gallery-item:hover {
       transform: scale(1.07); }
     /* The Modal (background) */
+    .gallery-item-title {
+      position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.0rem; padding: 6px;
+      margin: 8px 0 0; background: rgba(0, 0, 0, 0.4); color: white; line-height: 1.1; }
     .modal {
       display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%;
       background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; transition: opacity 0.5s ease; }
@@ -62,8 +65,8 @@
 
 
   <div class="gallery">
-    <img src="/photos/art/jGeilsBand.jpg" class="gallery-item" onclick="openModal('modal1')">
-      <div class="caption">Centerfold, The J. Geils Band</div>
+    <div class="gallery-item"><img src="/photos/art/jGeilsBand.jpg" onclick="openModal('modal1')">
+      <div class="gallery-item-title">Centerfold, The J. Geils Band</div></div>
     <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball" class="gallery-item" onclick="openModal('modal2')">
     <img src="/photos/art/nowNotYet.jpg" alt="Now Not Yet, half-alive" class="gallery-item" onclick="openModal('modal3')">
     <img src="/photos/art/citrona.jpg" alt="Citrona, flipturn" class="gallery-item" onclick="openModal('modal4')">
@@ -77,11 +80,21 @@
   <div id="modal1" class="modal"> <span class="close" onclick="closeModal('modal1')">&times;</span>
     <img src="/photos/art/jGeilsBand.jpg" alt="Centerfold, The J. Geils Band" class="modal-content"> </div>
   <div id="modal2" class="modal"> <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball" class="modal-content"> </div>
+    <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball - setup" class="modal-content"> </div>
   <div id="modal3" class="modal"> <span class="close" onclick="closeModal('modal3')">&times;</span>
     <img src="/photos/art/nowNotYet.jpg" alt="Now Not Yet, half-alive" class="modal-content"> </div>
   <div id="modal4" class="modal"> <span class="close" onclick="closeModal('modal4')">&times;</span>
     <img src="/photos/art/citrona.jpg" alt="Citrona, flipturn" class="modal-content"> </div>
+  <div id="modal5" class="modal"> <span class="close" onclick="closeModal('modal5')">&times;</span>
+    <img src="/photos/art/greer.jpg" alt="Happy People, Greer" class="modal-content"> </div>
+  <div id="modal6" class="modal"> <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <img src="/photos/art/montgomeryRicky.jpg" alt="Montgomery Ricky, Ricky Montgomery" class="modal-content"> </div>
+  <div id="modal7" class="modal"> <span class="close" onclick="closeModal('modal7')">&times;</span>
+    <img src="/photos/art/hsArtDisplay.jpg" alt="hsArtDisplay.jpg" class="modal-content"> </div>
+  <div id="modal8" class="modal"> <span class="close" onclick="closeModal('modal8')">&times;</span>
+    <img src="/photos/art/greerSetup.jpg" alt="Happy People, Greer - setup" class="modal-content"> </div>
+  <div id="modal9" class="modal"> <span class="close" onclick="closeModal('modal9')">&times;</span>
+    <img src="/photos/art/intersection.jpg" alt="Intersection, Modern Baseball" class="modal-content"> </div>
 
   <script>
     function openModal(modalId) {
