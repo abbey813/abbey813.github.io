@@ -1,89 +1,71 @@
+/* --- GENERAL COLORS, BODY, WRAP --- */
 :root {
   --page: #e8e5ef;      /* page background */
   --ink: #2b2540;       /* main text color */
   --bar: #2b2540;       /* nav bar color */
-  --bar-text: #f3f0fa;  /* nav bar text */
-}
-
+  --bar-text: #f3f0fa;  /* nav bar text */ }
 * { box-sizing: border-box; }
-
 body {
   margin: 10px;
   background: var(--page);
   color: var(--ink);
   font-family: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
-  line-height: 1.6;
-}
-.wrap {
-   padding: 24px 16px 48px;
-}
+  line-height: 1.6; }
+.wrap {padding: 24px 16px 48px;}
+
+/* ----- PDF FOR MY RESUME ----- */
+.pdf {width: 100%; aspect-ratio: 4 / 3;}
+
+/* --- PHOTO GALLERY THAT EXPANDS TO FULL SCREEN W/ CAPTIONS --- */
 .img.c {
    display: flex;
    position: relative;
 }
-.pdf {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-}
-/* The grid that holds all the tiles */
+
+/* --- EXPANDABLE TILES, RN FOR ENGINEERING --- */
 .grid {
    display: grid; gap: 24px; padding: 16px; align-items: start;
    grid-template-columns: repeat(auto-fit, 240px);
-   justify-content: center;
-}
-
+   justify-content: center; }
 .dropDownTile {
     cursor:pointer; background: var(--bar);
     position: relative; height: 280px; background-size: cover;
     background-position: center; cursor: pointer;
     border-radius: 10px; overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    background-size: cover;
-}
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
 .dropDownTile:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
 .dropDown-title {
     position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem;
-    padding: 8px 12px; background: rgba(0, 0, 0, 0.4); color: white; line-height: 1.2;
-}
+    padding: 8px 12px; background: rgba(0, 0, 0, 0.4); color: white; line-height: 1.2; }
 .dropDown-title span {
-    font-size: 0.8rem;
-}
+    font-size: 0.8rem; }
 .dropped {
   display: block; width: 100%; padding: 20px;
-  background: var(--bar); color: var(--bar-text);
-}
+  background: var(--bar); color: var(--bar-text); }
 
-/* ---- The navigation bar with icons ---- */
+/* ---- NAVIGATION BAR ---- */
 .nav {
   display: flex; flex-wrap: wrap; justify-content: center; margin: 32px 0 0;
-  padding: 0; list-style: none; background: var(--bar); border-radius: 6px;
-}
-
+  padding: 0; list-style: none; background: var(--bar); border-radius: 6px; }
 .nav li + li { border-left: 1px solid rgba(243, 240, 250, 0.25); } /* thin divider lines */
-
 .nav a {
   display: flex; flex-direction: column; align-items: center; min-width: 100px;
-  padding: 12px 14px; color: var(--bar-text); text-decoration: none; font-size: 0.9rem;
-}
+  padding: 12px 14px; color: var(--bar-text); text-decoration: none; font-size: 0.9rem; } /* each page */
 .nav .icon { font-size: 1.5rem; line-height: 1.2; }
 .nav a:hover { background: rgba(255, 255, 255, 0.12); }
 .nav a[aria-current="page"] { background: rgba(255, 255, 255, 0.2); font-weight: 700; }
 
-/* ---- Text pages (like About) ---- */
+/* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
 .text { max-width: 62ch; margin: 0 auto 8px; }
 .text h1 { font-size: 2rem; line-height: 1.2; }
 
-/* Visible outline when using the keyboard */
+/* --- KEYBOARD EFFECT --- */
 a:focus-visible { outline: 3px solid #f0b429; outline-offset: 2px; }
 
-/* ---- On phones, tiles stack in one column ---- */
+/* ---- PHONE SETTINGS ---- */
 @media (max-width: 560px) {
   .tiles { grid-template-columns: 1fr; }
-  .nav a { min-width: 76px; padding: 10px 8px; }
-}
-
+  .nav a { min-width: 76px; padding: 10px 8px; } }
 @media (prefers-reduced-motion: no-preference) {
-  .tile { transition: filter 0.15s; }
-}
+  .tile { transition: filter 0.15s; } }
