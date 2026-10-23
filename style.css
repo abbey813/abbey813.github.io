@@ -1,13 +1,8 @@
-/* ===== style.css =====
-   This one file controls how EVERY page looks.
-   Change a color here and it changes on all pages at once. */
-
-/* Colors live here so they are easy to change. */
 :root {
   --page: #e8e5ef;      /* page background */
   --ink: #2b2540;       /* main text color */
-  --bar: #2b2540;       /* navigation bar background */
-  --bar-text: #f3f0fa;  /* navigation bar text */
+  --bar: #2b2540;       /* nav bar color */
+  --bar-text: #f3f0fa;  /* nav bar text */
 }
 
 * { box-sizing: border-box; }
@@ -27,56 +22,32 @@ body {
    position: relative;
 }
 /* The grid that holds all the tiles */
-.tiles {
+.grid {
    display: grid; gap: 24px; padding: 16px; align-items: start;
    grid-template-columns: repeat(auto-fit, 240px);
    justify-content: center;
 }
 
- /* One tile, on a page. Ex: buggy tile on Engineering page. clickable to expand*/
-.tile {
-   border-radius: 10px; overflow: hidden; background: #f2f2f2;
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
- }
-
-/* The clickable top part with the background photo */
-.tile-header {
+.dropDownTile {
+    cursor:pointer; background: var(--bar);
     position: relative; height: 280px; background-size: cover;
     background-position: center; cursor: pointer;
+    border-radius: 10px; overflow: hidden; background: #f2f2f2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
-/* The title bar: transparent black, sitting over the photo */
-.tile-title {
+.dropDownTile:hover {
+    color:#515151;
+}
+.dropDown-title {
     position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem;
     padding: 8px 12px; background: rgba(0, 0, 0, 0.4); color: white; line-height: 1.2;
 }
-/* The smaller line under the title (the <span> inside .tile-title) */
-.tile-title span {
+.dropDown-title span {
     font-size: 0.8rem;
 }
-/* The hidden part: description and extra photos */
-.tile-content {
-    display: none;
-    padding: 16px;
-}
-/* When the tile has the "open" label, show the hidden part */
-.tile.open .tile-content {
-    display: flex;
-    overflow-y: auto;
-    background: var(--page);
-    padding: 24px 16px 48px;
-    width: 900px;
-    /*z-index: 100;*/
-}
-.tile-content img {
-    display: block; width: 100%; max-width: 320px;
-    margin: 10px auto 0; border-radius: 6px;
-}
-.tile-content p {
-    max-width: 800px; margin: 10px auto;
-}
-.close-btn {
-    display: block; margin-left: auto; padding: 6px 10px;
-    font: inherit; cursor: pointer;
+.dropped {
+  display: block; width: 100%; padding: 20px;
+  background: var(--bar); color: var(--bar-text);
 }
 
 /* ---- The navigation bar with icons ---- */
