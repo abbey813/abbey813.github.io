@@ -9,7 +9,7 @@
 
   <style>
     .testDrop {
-      display: block; width: 100%; padding: 20px; margins: 24px; position: absolute; bottom: 0;
+      display: block; width: 100%; padding: 20px; margins: 24px; position: relative;
       background: var(--bar); color: var(--bar-text); border-radius: 6px; }
   </style>
 </head>
@@ -48,7 +48,7 @@
           this is the tile
       </div>
 
-      <div class="dropDownTile" style="background-image: url('/photos/.jpg');">
+      <div class="dropDownTile" style="background-image: url('/photos/.jpg');" onclick="openModal2('acamodal')">
         <div class="dropDown-title">Academics<br><span>Resume &amp Relevant Coursework</span></div>
       </div>
       <div class="dropped" style="display:none">
@@ -59,11 +59,15 @@
       <div class="testDrop" id="lunmodal" display="none">
           this is the tile corresponding to lunabotics
       </div>
+
+      <div class="testDrop" id="acamodal" display="none">
+          this is the tile corresponding to academics
+      </div>
       
     </div>
     
     <script>
-        function hideShow(event) {
+        /*function hideShow(event) {
           if (event.target && event.target.className == 'dropDownTile'){
             const x = event.target.nextElementSibling;
             if (x.style.display === 'none') {
@@ -74,7 +78,7 @@
             }
           }
         }
-      document.addEventListener('click', hideShow, true);
+      document.addEventListener('click', hideShow, true); */
       
       function openModal2(modal2Id) {
         let modal = document.getElementById(modal2Id);
