@@ -6,6 +6,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .testDrop {
+      width: 800px; background: var(--bar);
+    }
+  </style>
 </head>
   
 <body>
@@ -50,7 +56,7 @@
         <object class="pdf" data="resume.pdf" width="800" height="500"> </object>
       </div>
 
-      <div class="dropped" id="lunmodal">
+      <div class="testDrop" id="lunmodal" display="none">
           this is the tile corresponding to lunabotics
       </div>
       
@@ -72,14 +78,13 @@
       
       function openModal2(modal2Id) {
         let modal = document.getElementById(modal2Id);
-        modal.style.display = "flex";
-        modal.classList.toggle("show"); }
-      /*function closeModal2(modal2Id) {
-        let modal = document.getElementById(modal2Id);
-        modal.classList.remove("show");
-        setTimeout(function () {
-        modal.style.display = "none";
-        }, 300); }*/
+        if (modal.style.display === "none"){
+          modal.style.display = "block";
+        } else {
+          modal.style.display = "none";
+        }
+      }
+
     </script>
     
   </div>    
