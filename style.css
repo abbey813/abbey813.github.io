@@ -1,14 +1,14 @@
 /* --- GENERAL COLORS, BODY, WRAP --- */
 :root {
-  --page: #e8e5ef;      /* page background */
-  --ink: #2b2540;       /* main text color */
-  --bar: #2b2540;       /* nav bar color */
-  --bar-text: #f3f0fa;  /* nav bar text */ }
+  --page: #cfe1b9;      /* page background */
+  --ink: #191800;       /* main text color */
+  --bar: #344e41;       /* nav bar color */
+  --bar-text: #e8edd5;  /* nav bar text */ }
 * { box-sizing: border-box; }
 body {
   margin: 10px; background: var(--page); color: var(--ink); line-height: 1.6;
   font-family: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif; }
-.wrap {padding: 24px 16px 48px;}
+.wrap {padding: 20px 16px 48px;}
 
 /* --- PHOTO GALLERY THAT EXPANDS TO FULL SCREEN (MODALS)  =--- */
 .gallery {
