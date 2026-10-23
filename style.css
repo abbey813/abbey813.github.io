@@ -33,7 +33,7 @@ body {
 .dropDown-title span {
     font-size: 0.8rem; }
 .dropped {
-  display: block; width: 100%; padding: 20px; margins: 24px;
+  display: block; width: 100%; padding: 20px; margins: 24px; position: absolute; bottom: 0;
   background: var(--bar); color: var(--bar-text); border-radius: 6px; }
 
 /* ---- NAVIGATION BAR ---- */
