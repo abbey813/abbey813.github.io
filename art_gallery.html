@@ -17,6 +17,14 @@
       .gallery-item {
         width: calc(100% - 20px);
       } }
+
+    figure {
+      display: inline-block; margin: 0; position: relative;
+    }
+    figcaption {
+      position: absolute; bottom: 1em; left: 0;
+      background-color: yellow; width: 100%;
+    }
   </style>
 </head>
   
@@ -34,16 +42,20 @@
 
   <div class="gallery">
     <div class="dropDownTile" style="background-image: url('/photos/art/jGeilsBand.jpg');" onclick="openModal('modal1')">
-       <div class="dropDown-title">Centerfold, The J. Geils Band</div></div>
-    <div class="galleryItem" style="background-image: url('/photos/art/jGeilsBand.jpg');" onclick="openModal('modal1')">
-        <div class="galleryItem-title">Centerfold, The J. Geils Band</div></div>
+       <div class="dropDown-title">Centerfold, The J. Geils Band - dropDownTile</div></div>
+
+    <figure class="fig">
+      <img src="/photos/art/jGeilsBand.jpg" class="fig__media"/>
+      <figcaption class="image-caption-text">Some caption</figcaption>
+    </figure>
+    
     <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball" class="galleryItem" onclick="openModal('modal2')">
     <img src="/photos/art/nowNotYet.jpg" alt="Now Not Yet, half-alive" class="galleryItem" onclick="openModal('modal3')">
     <img src="/photos/art/citrona.jpg" alt="Citrona, flipturn" class="galleryItem" onclick="openModal('modal4')">
     <img src="/photos/art/greer.jpg" alt="Citrona, flipturn" class="galleryItem" onclick="openModal('modal5')">
     <img src="/photos/art/montgomeryRicky.jpg" alt="Citrona, flipturn" class="galleryItem" onclick="openModal('modal6')">
     <img src="/photos/art/hsArtDisplay.jpg" alt="Citrona, flipturn" class="galleryItem" onclick="openModal('modal7')">
-    <img src="/photos/art/greerSetup.jpg" alt="Citrona, flipturn" class="galleryItem" onclick="openModal('modal8')">
+    <img src="/photos/art/greerSetup.jpg" alt="Citrona, flipturn" class="galleryItem" onclick="openModal('modal8')" style="width:450px; height:auto;">
     <img src="/photos/art/intersection.jpg" alt="Citrona, flipturn" class="galleryItem" onclick="openModal('modal9')">
   </div>
 
