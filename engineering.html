@@ -11,6 +11,7 @@
 <body>
   <div class="wrap">
 
+    <!-- ----- NAVIGATION BAR ----- -->
     <nav>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
@@ -20,9 +21,9 @@
         <!-- <li><a href="inspiration.html">Inspiration</a></li> -->
       </ul>
     </nav>
-    
+
+    <!-- ---- GRID OF ORIGINAL EXPANDABLE TILES --- -->
     <div class="grid">
-      
       <div class="dropDownTile" style="background-image: url('/photos/bugCoverTile.jpg');" onclick="toggleTile('bugModal')">
         <div class="dropDown-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div>
       </div>
@@ -36,23 +37,30 @@
         <div class="dropDown-title">Academics<br><span>Resume &amp Relevant Coursework</span></div>
       </div>
 
-      <div class="testDrop" id="bugTile" style="display:none">
+      <!-- ---- EXPANDED BUGGY TILE ----- -->
+      <div class="dropped" id="bugTile" style="display:none">
           this is the bug tile <br>
           <img src="/photos/bug1.JPEG" alt="bug photo 1" style="width: 300px">
       </div>
-      <div class="testDrop" id="lunTile" style="display:none">
+
+      <!-- ---- EXPANDED LUNABOTICS TILE -- -->
+      <div class="dropped" id="lunTile" style="display:none">
           lunabotics tile
       </div>
-      <div class="testDrop" id="machTile" style="display:none">
+
+      <!-- ---- EXPANDED MACHINING TILE -- --->
+      <div class="dropped" id="machTile" style="display:none">
           machining tile
       </div>
-      <div class="testDrop" id="acaTile" style="display:none">
+
+      <!-- --- EXPANDED ACADEMIC TILE ---->
+      <div class="dropped" id="acaTile" style="display:none">
           academic tile
           <object class="pdf" data="resume.pdf" width="800" height="500"> </object>
-      </div>
-      
+      </div> 
     </div>
-    
+
+    <!----- FUNCTION TO OPEN/CLOSE THE TILE EXPANSIONS -->
     <script>
       function toggleTile(tileID) {
         let x = document.getElementById(tileID);
