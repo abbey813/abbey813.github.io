@@ -22,9 +22,15 @@
       display: inline-block; margin: 0; position: relative;
     }
     figcaption {
-      position: absolute; bottom: 1em; left: 0;
-      background-color: yellow; width: 100%;
+      position: absolute; bottom: 0; left: 0; right:0; width: 100%; color: white; 
+      font-size: 1.0rem; padding: 10px; background: rgba(0, 0, 0, 0.4); line-height: 1.2;
     }
+    .TgalleryItem {
+      cursor: pointer; background: var(--bar); position: relative; /*max-width: 400px; max-height: 300px; height: auto; width: auto;*/
+      background-position: center; border-radius: 2px; /*transition: transform 0.2s ease;*/ overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25); margin: 24px; background-size: cover;}
+    .TgalleryItem:hover {
+      transform: scale(1.07); box-shadow: 0 8px 18px rgba(0,0,0,0.5);}  
   </style>
 </head>
   
@@ -44,9 +50,29 @@
     <div class="dropDownTile" style="background-image: url('/photos/art/jGeilsBand.jpg');" onclick="openModal('modal1')">
        <div class="dropDown-title">Centerfold, The J. Geils Band - dropDownTile</div></div>
 
-    <figure class="fig">
-      <img src="/photos/art/jGeilsBand.jpg" style="width:200; height:350">
-      <figcaption>Some caption</figcaption>
+    <figure>
+      <img src="/photos/art/jGeilsBand.jpg" style="width:200px; height:350px">
+      <figcaption>Some caption, just figures with set dims</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/photos/art/jGeilsBand.jpg" class="TgalleryItem" style="width:200px; height:350px">
+      <figcaption>Some caption, img is class TgalleryItem with set dims</figcaption>
+    </figure>
+
+    <figure class="TgalleryItem">
+      <img src="/photos/art/jGeilsBand.jpg", style="width:200px; height:350px">
+      <figcaption>Some caption, figure is class TgalleryItem with set dims</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/photos/art/jGeilsBand.jpg" class="TgalleryItem" style="max-width: 400px; max-height: 300px; height: auto; width: auto;">
+      <figcaption>Some caption, img is class TgalleryItem with auto dims</figcaption>
+    </figure>
+
+    <figure class="TgalleryItem">
+      <img src="/photos/art/jGeilsBand.jpg" style="max-width: 400px; max-height: 300px; height: auto; width: auto;">
+      <figcaption>Some caption, figure is class TgalleryItem with auto dims</figcaption>
     </figure>
     
     <img src="/photos/art/moboPresentsSetup.jpg" alt="MOBO Presents, Modern Baseball" class="galleryItem" onclick="openModal('modal2')">
