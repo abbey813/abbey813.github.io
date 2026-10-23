@@ -31,7 +31,7 @@
           <img src="/photos/bug1.JPEG" alt="bug photo 1" style="width: 300px">
       </div>
 
-      <div class="dropDownTile" style="background-image: url('/photos/lunCoverTile.JPG');" onclick=openModal2(lunmodal);>
+      <div class="dropDownTile" style="background-image: url('/photos/lunCoverTile.JPG');" onclick="openModal2('lunmodal')">
         <div class="dropDown-title">NASA Lunabotics<br><span>Lunar Excavation Rover</span></div>
       </div>
 
@@ -50,12 +50,12 @@
         <object class="pdf" data="resume.pdf" width="800" height="500"> </object>
       </div>
 
-      <div class="dropped" style="display:none">
+      <div class="dropped" id="lunmodal">
           this is the tile corresponding to lunabotics
       </div>
       
     </div>
-        
+    
     <script>
         function hideShow(event) {
           if (event.target && event.target.className == 'dropDownTile'){
@@ -73,7 +73,13 @@
       function openModal2(modal2Id) {
         let modal = document.getElementById(modal2Id);
         modal.style.display = "flex";
-        modal.classList.add("show"); }
+        modal.classList.toggle("show"); }
+      /*function closeModal2(modal2Id) {
+        let modal = document.getElementById(modal2Id);
+        modal.classList.remove("show");
+        setTimeout(function () {
+        modal.style.display = "none";
+        }, 300); }*/
     </script>
     
   </div>    
