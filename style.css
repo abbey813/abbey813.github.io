@@ -54,7 +54,7 @@ figcaption {
 
 /* ---- NAVIGATION BAR ---- */
 .nav {
-  display: flex; flex-wrap: wrap; justify-content: center; margin: 32px 0 0;
+  display: flex; flex-wrap: wrap; justify-content: center; margin: 16px 0 0;
   padding: 0; list-style: none; background: var(--bar); border-radius: 6px; }
 .nav li + li { border-left: 1px solid rgba(243, 240, 250, 0.25); } /* thin divider lines */
 .nav a {
