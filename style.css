@@ -12,12 +12,10 @@ body {
 
 /* --- PHOTO GALLERY THAT EXPANDS TO FULL SCREEN (MODALS)  =--- */
 figure {
-  display: inline-block; margin: 0; position: relative;}
+  display: flex; /*display: inline-block*/ flex-wrap: wrap; justify-content: space-around; margin:16px; position: relative;}
 figcaption {
   position: absolute; bottom: 0; left: 0; right:0; width: 100%; color: white; 
   font-size: 1.0rem; padding: 10px; background: rgba(0, 0, 0, 0.4); line-height: 1.2;}
-.gallery {
-  display: flex; flex-wrap: wrap; justify-content: space-around; padding: 0 15px; }
 .galleryItem {
   cursor: pointer; background: var(--bar); position: relative;
   background-position: center; border-radius: 4px; transition: transform 0.2s ease; overflow: hidden;
