@@ -27,27 +27,27 @@ figcaption {
   background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; transition: opacity 0.5s ease; } 
 .modal-content {
   position: relative; width: auto; height: 100%; max-width: 100%; max-height: 100%; 
-   border-radius: 5px; overflow: hidden; animation: zoomIn 0.5s; }
+  border-radius: 5px; overflow: hidden; animation: zoomIn 0.5s; }
 .modal.show {
-   display: flex; opacity: 1; }
+  display: flex; opacity: 1; }
 .close {
   position: absolute; top: 10px; right: 15px; color: #ffffff;
-   font-size: 35px; font-weight: bold; cursor: pointer; transition: transform 0.3s; }
+  font-size: 35px; font-weight: bold; cursor: pointer; transition: transform 0.3s; }
 
 /* --- EXPANDABLE TILES, RN FOR ENGINEERING --- */
 .grid {
   display: flex; flex-flow: wrap; justify-content: space-around; padding: 0; margin: 10px; }
 .dropDownTile {
-    cursor:pointer; background: var(--bar); position: relative; height: 400px; width: 320px;
-    background-position: center; border-radius: 10px; overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25); margin: 18px; background-size: cover;}
+  cursor:pointer; background: var(--bar); position: relative; height: 400px; width: 320px;
+  background-position: center; border-radius: 10px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25); margin: 18px; background-size: cover;}
 .dropDownTile:hover {
-    box-shadow: 0 8px 18px rgba(0,0,0,0.5);}
+  box-shadow: 0 8px 18px rgba(0,0,0,0.5);}
 .dropDown-title {
-    position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem; padding: 10px;
-    margin: 32px 0 0; background: rgba(0, 0, 0, 0.5); color: white; line-height: 1.2; }
+  position: absolute; left: 0; right: 0; bottom: 0; font-size: 1.2rem; padding: 10px; font-weight:bold;
+  margin: 32px 0 0; background: rgba(0, 0, 0, 0.5); color: white; line-height: 1.2; }
 .dropDown-title span {
-    font-size: 0.8rem; }
+  font-size: 0.8rem; }
 .dropped {
   display: block; width: 100%; padding: 20px; margins: 24px; position: relative;
   background: var(--bar); color: var(--bar-text); border-radius: 6px; }
