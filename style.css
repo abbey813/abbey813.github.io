@@ -64,6 +64,12 @@ figcaption {
 .nav a:hover { background: rgba(255, 255, 255, 0.12); }
 .nav a[aria-current="page"] { background: rgba(255, 255, 255, 0.2); font-weight: 700; }
 
+/* --- FOR NORMAL PHOTOS, AND OPTIONAL CAPTION BENEATH --- */
+.imgC {
+  max-width: 400px; }
+.imgC C {
+  position: absolute; bottom:0; font-size: 0.8rem; padding: 2px; align-items: center;}
+
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
 .text { max-width: 62ch; margin: 0 auto 8px; }
 .text h1 { font-size: 2rem; line-height: 1.2; }
