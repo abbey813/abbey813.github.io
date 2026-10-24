@@ -8,7 +8,7 @@
 body {
   margin: 10px; background: var(--page); color: var(--ink); line-height: 1.6;
   font-family: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif; }
-.wrap {padding: 20px 16px 48px;}
+.wrap {padding: 212px 16px 48px;}
 
 /* --- PHOTO GALLERY THAT EXPANDS TO FULL SCREEN (MODALS)  =--- */
 figure {
