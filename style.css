@@ -73,7 +73,7 @@ figcaption {
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
 .text { max-width: 62ch; margin: 0 auto 8px; }
 .text h1 { font-size: 2rem; line-height: 1.2; }
-.liD { font-size: 0.5rem; margin-left:8px; }
+.liD { font-size: 0.8rem; margin-left:8px; }
 
 /* --- KEYBOARD EFFECT --- */
 a:focus-visible { outline: 3px solid #f0b429; outline-offset: 2px; }
