@@ -11,9 +11,9 @@ body {
 .wrap {padding: 10px 16px 48px;}
 
 /* --- PHOTO GALLERY THAT EXPANDS TO FULL SCREEN (MODALS)  =--- */
-figure {
+.figGal {
   display: inline-flex; flex-flow: wrap; justify-content: space-around; vertical-align: middle; padding: 0; margin: 10px;}
-figcaption {
+.figGalCap {
   position: absolute; bottom: 0; left: 0; right:0; width: 100%; color: white;
   font-size: 1.0rem; padding: 10px;  text-shadow: 3px 2.5px 5px #000000; line-height: 1.2;}
 .galleryItem {
@@ -65,9 +65,9 @@ figcaption {
 .nav a[aria-current="page"] { background: rgba(255, 255, 255, 0.2); font-weight: 700; }
 
 /* --- FOR NORMAL PHOTOS, AND OPTIONAL CAPTION BENEATH --- */
-.imgC {
+.figN {
   max-width: 400px; }
-.imgC C {
+.figNCap {
   position: relative; top:0; font-size: 0.8rem; padding: 2px; align-items: center;}
 
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
