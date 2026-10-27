@@ -67,7 +67,7 @@ body {
 .figN {
   max-width: 400px; }
 .figNCap {
-  position: absolute; left: 0; right:0; width: 100%; color: black;
+  position: absolute; left: 0; right:0; width: 100%; color: var(--ink);
   font-size: 1.0rem; padding: 10px; line-height: 1.2;}
 
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
