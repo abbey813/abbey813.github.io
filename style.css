@@ -11,15 +11,14 @@ body {
 .wrap {padding: 10px 16px 48px;}
 
 /* --- PHOTO GALLERY THAT EXPANDS TO FULL SCREEN (MODALS)  =--- */
-figure {
-  display: inline-flex; flex-flow: wrap; justify-content: space-around; vertical-align: middle; padding: 0; margin: 10px;}
-figcaption {
-  position: absolute; bottom: 0; left: 0; right:0; width: 100%; color: white;
-  font-size: 1.0rem; padding: 10px;  text-shadow: 3px 2.5px 5px #000000; line-height: 1.2;}
 .galleryItem {
   cursor: pointer; background: var(--bar); position: relative; margin:16px;
   background-position: center; border-radius: 4px; transition: transform 0.2s ease; overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25); background-size: cover;}
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25); background-size: cover; display: inline-flex; flex-flow: wrap; 
+  justify-content: space-around; vertical-align: middle; padding: 0; margin: 10px;}
+.galleryItemCap {
+  position: absolute; bottom: 0; left: 0; right:0; width: 100%; color: white;
+  font-size: 1.0rem; padding: 10px;  text-shadow: 3px 2.5px 5px #000000; line-height: 1.2;}
 .galleryItem:hover {
   transform: scale(1.07); box-shadow: 0 8px 18px rgba(0,0,0,0.5);}  
 .modal {
