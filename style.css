@@ -11,9 +11,9 @@ body {
 .wrap {padding: 10px 16px 48px;}
 
 /* --- PHOTO GALLERY THAT EXPANDS TO FULL SCREEN (MODALS)  =--- */
-.figGal {
+figure {
   display: inline-flex; flex-flow: wrap; justify-content: space-around; vertical-align: middle; padding: 0; margin: 10px;}
-.figGalCap {
+figcaption {
   position: absolute; bottom: 0; left: 0; right:0; width: 100%; color: white;
   font-size: 1.0rem; padding: 10px;  text-shadow: 3px 2.5px 5px #000000; line-height: 1.2;}
 .galleryItem {
