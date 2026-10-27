@@ -68,7 +68,7 @@ figcaption {
 .imgC {
   max-width: 400px; }
 .imgC C {
-  position: absolute; bottom:0; font-size: 0.8rem; padding: 2px; align-items: center;}
+  position: relative; top:0; font-size: 0.8rem; padding: 2px; align-items: center;}
 
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
 .text { max-width: 62ch; margin: 0 auto 8px; }
