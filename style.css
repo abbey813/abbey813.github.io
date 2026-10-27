@@ -67,7 +67,7 @@ body {
 .figN {
   max-width: 400px; }
 .figNCap {
-  position: relative; top:0; font-size: 0.8rem; padding: 2px; align-items: center;}
+  position: relative; top:0; font-size: 0.8rem; padding: 2px; vertical-align: middle; align-items: center;display: inline-flex;}
 
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
 .text { max-width: 62ch; margin: 0 auto 8px; }
