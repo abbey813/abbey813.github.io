@@ -23,18 +23,33 @@
 
     <!-- ---- GRID OF ORIGINAL EXPANDABLE TILES --- -->
     <div class="grid">
-      <div class="flipTile" style="background-image: url('/photos/cul/pub.jpg');" onclick="toggleTile('pubTile')">
+      <div class="flipTile" style="background-image: url('/photos/cul/pub.jpg');" onclick="flip(this)">
         <div class="flip-title">Washington St. Pub<br><span>Junior Bartender, & Barback</span></div>
+        <div class="flipped">Lorem ipsum<br>2022-12-20</div>
       </div>
-      <div class="flipTile" style="background-image: url('/photos/cul/dinnerClub.JPG');" onclick="toggleTile('dinTile')">
+      <div class="flipTile" style="background-image: url('/photos/cul/dinnerClub.JPG');" onclick="flip(this)">
         <div class="flip-title">Dinner Club<br><span>Monthly Culinary Tradition</span></div>
+        <div class="flipped">Lorem ipsum<br>2022-12-20</div>
       </div>
-      <div class="flipTile" style="background-image: url('/photos/cul/wylder.jpg');" onclick="toggleTile('wylderTile')">
+      <div class="flipTile" style="background-image: url('/photos/cul/wylder.jpg');" onclick="flip(this)">
         <div class="flip-title">Tickler's Crabs @ Wylder Inn<br><span>Line Cook & Server's Assistant</span></div>
+        <div class="flipped">Lorem ipsum<br>2022-12-20</div>
       </div>
-      <div class="flipTile" style="background-image: url('/photos/misc.jpg');" onclick="toggleTile('miscTile')">
+      <div class="flipTile" style="background-image: url('/photos/misc.jpg');" onclick="flip(this)">
         <div class="flip-title">Miscellaneous<br><span>Cakes & Personal Cooking</span></div>
+        <div class="flipped">Lorem ipsum<br>2022-12-20</div>
       </div>
+    </div>
+
+    <script>
+      function flip(element) {
+        var image = element.querySelector("img.album-photos");
+        var infoHolder = element.querySelector("div.infoHolder");
+      
+        infoHolder.classList.toggle("flipped");
+        image.classList.toggle("flipped");
+      }
+    </script>
     
   </div>
 </body>
