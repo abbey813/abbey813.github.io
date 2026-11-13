@@ -50,6 +50,8 @@ body {
 .dropped {
   display: block; width: 100%; padding: 12px; margin: 24px; position: relative;
   background: var(--bar); color: var(--bar-text); border-radius: 6px; }
+.container {
+  display: flex; width: 100%;}
 .flipTile {
   cursor:pointer; background: var(--bar); position: relative; height: 400px; width: 320px;
   background-position: center; border-radius: 10px; overflow: hidden;
