@@ -92,6 +92,7 @@ body {
 .text { max-width: 62ch; margin: 0 auto 8px; }
 .text h1 { font-size: 2rem; line-height: 1.2; }
 .liD { font-size: 0.8rem; margin-left:8px; text-indent:8px}
+ul {list-style-position: outside;
 
 /* --- KEYBOARD EFFECT --- */
 a:focus-visible { outline: 3px solid #f0b429; outline-offset: 2px; }
