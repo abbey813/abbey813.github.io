@@ -24,10 +24,5 @@ art_gallery.html
 - because I like my art too much to not share
 - it's a lifelong hobby of mine
 
-inspiration.html
-- what motivates me, academically and personally
-- some favorite music artists, and Mateusz Skutnik
-- travel & friends
-
 style.css
-- a necessary component for an html website
+- self explanatory as well
