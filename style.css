@@ -50,10 +50,6 @@ body {
 .dropped {
   display: block; width: 100%; padding: 12px; margin: 24px; position: relative;
   background: var(--bar); color: var(--bar-text); border-radius: 6px; }
-.container {
-  display: flex; width: 100%;}
-.backdrop {
-  background-color: #4a6357;}
 .flipTile {
   cursor:pointer; background: var(--bar); position: relative; height: 380px; width: 320px;
   background-position: center; border-radius: 10px; overflow: hidden;
@@ -77,23 +73,23 @@ body {
 .nav {
   display: flex; flex-wrap: wrap; justify-content: center; margin: 16px 0 0;
   padding: 0; list-style: none; background: var(--bar); border-radius: 6px; }
-.nav li + li { border-left: 1px solid rgba(243, 240, 250, 0.25); } /* thin divider lines */
 .nav a {
   display: flex; flex-direction: column; align-items: center; min-width: 100px;
-  padding: 12px 14px; color: var(--bar-text); text-decoration: none; font-size: 0.9rem; } /* each page */
+  padding: 12px 14px; color: var(--bar-text); text-decoration: none; font-size: 0.9rem; }
+.nav li + li { border-left: 1px solid rgba(243, 240, 250, 0.25); }
 .nav .icon { font-size: 1.5rem; line-height: 1.2; }
 .nav a:hover { background: rgba(255, 255, 255, 0.12); }
 .nav a[aria-current="page"] { background: rgba(255, 255, 255, 0.2); font-weight: 700; }
 
 /* --- FOR NORMAL PHOTOS, AND OPTIONAL CAPTION BENEATH --- */
-.figNCap {
-  position: absolute; left: 0; right:0; width: 100%; color: var(--ink);
-  font-size: 1.0rem; padding: 10px; line-height: 1.2;}
+.figNCap { text-align:center; color: var(--ink); font-size: 1.0rem; padding: 10px; line-height: 1.2;}
+.container { display: flex; width: 100%;}
+.backdrop { background-color: #4a6357;}
 
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
 .text { max-width: 62ch; margin: 0 auto 8px; }
 .text h1 { font-size: 2rem; line-height: 1.2; }
-.liD { font-size: 0.8rem; margin-left:8px; }
+.liD { font-size: 0.8rem; position:relative;left:12px; }
 .ul {list-style-position: outside;}
 .li {white-space:nowrap;}
 
