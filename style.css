@@ -52,6 +52,8 @@ body {
   background: var(--bar); color: var(--bar-text); border-radius: 6px; }
 .container {
   display: flex; width: 100%;}
+.backdrop {
+  background-color: #4a6357;}
 .flipTile {
   cursor:pointer; background: var(--bar); position: relative; height: 380px; width: 320px;
   background-position: center; border-radius: 10px; overflow: hidden;
