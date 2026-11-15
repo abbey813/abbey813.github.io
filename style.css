@@ -37,7 +37,7 @@ body {
 .grid {
   display: flex; flex-flow: wrap; justify-content: space-around; padding: 0; margin: 10px; }
 .dropDownTile {
-  cursor:pointer; background: var(--bar); position: relative; height: 380px; width: 320px;
+  cursor:pointer; background: var(--bar); position: relative; height: 360px; width: 320px;
   background-position: center; border-radius: 10px; overflow: hidden; padding: 0px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25); margin: auto; background-size: cover;}
 .dropDownTile:hover {
@@ -51,7 +51,7 @@ body {
   display: block; width: 100%; padding: 12px; margin: 24px; position: relative;
   background: var(--bar); color: var(--bar-text); border-radius: 6px; }
 .flipTile {
-  cursor:pointer; background: var(--bar); position: relative; height: 380px; width: 320px;
+  cursor:pointer; background: var(--bar); position: relative; height: 360px; width: 320px;
   background-position: center; border-radius: 10px; overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25); margin: 18px; background-size: cover;}
 .flipTile:hover {
