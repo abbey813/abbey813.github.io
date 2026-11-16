@@ -84,7 +84,7 @@ body {
 /* --- FOR NORMAL PHOTOS, AND OPTIONAL CAPTION BENEATH --- */
 .figNCap { text-align:center; color: var(--bar-text); font-size: 1.0rem; padding: 0.8px; line-height: 1.2; text-align:center;}
 .container { display:flex; padding:16px;}
-.backdrop { display:flex; padding:12px; background-color:#4C6251;}
+.backdrop { display:block; padding:12px; background-color:#4C6251;}
 
 /* ---- TEXT SETTINGS: P, H1, H2, ETC ---- */
 .text { max-width: 62ch; margin: 0 auto 8px; }
