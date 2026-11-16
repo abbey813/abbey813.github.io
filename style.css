@@ -96,8 +96,8 @@ body {
 /* ---- LINKS ---- */
 a.dark:link { color:var(--bar); }
 a.dark:visited { color:#093d33 }
-a.light:link { color:#738b96 }
-a.light:visited { color:#737a96 }
+a.light:link { color:#7d938f }
+a.light:visited { color:#907d93 }
 
 /* --- KEYBOARD EFFECT --- */
 a:focus-visible { outline: 3px solid #f0b429; outline-offset: 2px; }
