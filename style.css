@@ -93,6 +93,12 @@ body {
 .ul {list-style-position: outside;}
 .li {white-space:nowrap;}
 
+/* ---- LINKS ---- */
+a.dark:link { color:#0a2d3d; }
+a.dark:visited { color:#093d33 }
+a.light:link { color:#738b96 }
+a.light:visited { color:#737a96 }
+
 /* --- KEYBOARD EFFECT --- */
 a:focus-visible { outline: 3px solid #f0b429; outline-offset: 2px; }
 
