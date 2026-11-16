@@ -94,7 +94,7 @@ body {
 .li {white-space:nowrap;}
 
 /* ---- LINKS ---- */
-a.dark:link { color:#0a2d3d; }
+a.dark:link { color:var(--bar); }
 a.dark:visited { color:#093d33 }
 a.light:link { color:#738b96 }
 a.light:visited { color:#737a96 }
