@@ -82,7 +82,7 @@ body {
 .nav a[aria-current="page"] { background: rgba(255, 255, 255, 0.2); font-weight: 700; }
 
 /* --- FOR NORMAL PHOTOS, AND OPTIONAL CAPTION BENEATH --- */
-figure { margin: 12px; }
+.thin { margin: 8px 12px; }
 .figNCap { text-align:center; color: var(--bar-text); font-size: 1.0rem; padding: 0.8px; line-height: 1.2; text-align:center;}
 .container { display:flex; }
 .backdrop { display:block; padding:12px; background-color:#4C6251;}
