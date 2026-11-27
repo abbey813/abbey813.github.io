@@ -27,13 +27,21 @@
     <!-- ---- GRID OF ORIGINAL EXPANDABLE TILES --- -->
     <div class="grid">
       <div class="dropDownTile" style="background-image: url('/photos/engr/bug/bugCoverTile.jpg');" onclick="toggleTile('bugTile')">
-        <div class="dropDown-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span></div></div>
+        <div class="dropDown-title">Fringe Racing: Buggy<br><span>Carbon-fiber Vehicle Racing</span><dates>2023-2026</dates></div></div>
       <div class="dropDownTile" style="background-image: url('/photos/engr/mach/rfSide.jpg');" onclick="toggleTile('machTile')">
         <div class="dropDown-title">Machining<br><span>in the Workshop</span></div></div>
       <div class="dropDownTile" style="background-image: url('/photos/engr/lun/lunCoverTile.JPG');" onclick="toggleTile('lunTile')">
-        <div class="dropDown-title">NASA Lunabotics<br><span>Lunar Excavation Rover</span></div></div>
+        <div class="dropDown-title">NASA Lunabotics<br><span>Lunar Excavation Rover</span><dates>2025-2026</dates></div></div>
       <div class="dropDownTile" style="background-image: url('/photos/engr/aca/acaCover.jpg');" onclick="toggleTile('acaTile')">
-        <div class="dropDown-title">Academics<br><span>Resume &amp Relevant Coursework</span></div></div>
+        <div class="dropDown-title">Academics<br><span>Resume, Coursework, &amp Awards</span></div></div>
+      <div class="dropDownTile" style="background-image: url('/photos/engr/aca/cadCover.jpg');" onclick="toggleTile('cadTile')">
+        <div class="dropDown-title">CAD<br><span>Solidworks, Onshape, +more</span></div></div>
+      <div class="dropDownTile" style="background-image: url('/photos/engr/aca/windCover.jpg');" onclick="toggleTile('windTile')">
+        <div class="dropDown-title">Mini Wind Turbine<br><span>Design, Fabrication, Analysis</span><dates>2024</dates></div></div>
+      <div class="dropDownTile" style="background-image: url('/photos/engr/aca/mcaCover.jpg');" onclick="toggleTile('mcaTile')">
+        <div class="dropDown-title">NASA L'Space<br><span>Mission Concept Academy</span><dates>2023</dates></div></div>
+      <div class="dropDownTile" style="background-image: url('/photos/engr/aca/busCover.jpg');" onclick="toggleTile('busTile')">
+        <div class="dropDown-title">Business<br><span>Case Competition &amp Experience</span><dates>2023</dates></div></div>
     </div>
 
       <!-- ---- EXPANDED BUGGY TILE ----- -->
@@ -242,6 +250,26 @@
                     In-plane and out-of-plane coupling effects. Manufacturing processes and residual stresses. Bending and torsional rigidities of composite tubes, beams, and columns. 
                     Failure modes and failure criteria in composites and hole-size effects on composite structures. Class involves also fabrication and testing of composite I-beams.</div></ul></div>
       </div>
+
+    <!-- ---- EXPANDED CAD TILE -- --->
+      <div class="dropped" id="cadTile" style="display:none">
+          <p>this is the cad tile</p>
+      </div>
+
+    <!-- ---- EXPANDED WIND TURBINE TILE -- --->
+      <div class="dropped" id="windTile" style="display:none">
+        <p>this is the wind turbine tile</p>
+      </div>
+
+    <!-- ---- EXPANDED L'SPACE MCA TILE -- --->
+      <div class="dropped" id="mcaTile" style="display:none">
+        <p>this is the lspace mission concept academy tile</p>
+      </div>
+
+    <!-- ---- EXPANDED BUSINESS TILE -- --->
+      <div class="dropped" id="busTile" style="display:none">
+        <p>this is the business tile</p>
+      </div>
     
     </div>
 
@@ -250,6 +278,10 @@
       function toggleTile(tileID) {
         let x = document.getElementById(tileID);
         if (x.style.display === "none"){
+          var active = document.getElementsByClassName('active');
+          if (active.length && active[0] !== this) {
+              active[0].classList.remove('active');
+          }
           x.style.display = "block";
         } else {
           x.style.display = "none"; }}
